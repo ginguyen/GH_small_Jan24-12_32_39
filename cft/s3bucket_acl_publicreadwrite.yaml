@@ -36,6 +36,10 @@ Resources:
           Value: AssetId
       VersioningConfiguration:
         Status: Enabled
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
   SourceBucketPolicy:
     Type: AWS::S3::BucketPolicy
     Properties:
